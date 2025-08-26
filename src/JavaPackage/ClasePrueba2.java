@@ -7,5 +7,6 @@ public class ClasePrueba2 {
     
     public void cantar(){
         System.out.println("Y si hacemos un muñeco");
+        System.out.println("Ven vamos a jugar");
     }
 }
