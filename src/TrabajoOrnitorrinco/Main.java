@@ -5,35 +5,61 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        try {
         Scanner scan=new Scanner(System.in);
-        System.out.println("Ingrese la longitud de la cola:");
+        System.out.println("Datos necesarios para el orni verde!");
+        System.out.print("Ingrese la longitud de la cola: ");
         double longitud =scan.nextDouble();
-        System.out.println("Ingrese la velocidad:");
+        System.out.print("Ingrese la velocidad: ");
         double velocidad=scan.nextDouble();
-        
+        scan.nextLine();
         
         OrnitorrincoVerde cristian=new OrnitorrincoVerde("cristian",longitud,velocidad);
         System.out.println(cristian);
         cristian.tocarGuitarra();
         cristian.tocarGuitorgan();
         cristian.tocarOrgano();
-
-//        OrnitorrincoBlue  azul=new OrnitorrincoBlue("azul",4,3,5);
-//        OrnitorrincoBlue  azul2=new OrnitorrincoBlue("azul2",4,3,5);
-//        System.out.println("Ingrese la longitud de la cola:");
-//        double longitud =scan.nextDouble();
-//        System.out.println("Ingrese la velocidad:");
         
+        System.out.println("Datos para el primer orni azul!");
+        System.out.print("Ingrese la longitud de la cola:");
+        longitud =scan.nextDouble();
+        System.out.print("Ingrese la velocidad:");
+        velocidad=scan.nextDouble();
+        System.out.print("Ingrese la propulsion:");
+        double propulsion=scan.nextDouble();
+        scan.nextLine();
         
-
-//        
-//        azul.nadar();
-//        azul.tocarGuitarra();
-//        
-//        azul2.nadar();
-//        azul2.tocarGuitarra();
-          scan.close();
+        OrnitorrincoBlue blue = new OrnitorrincoBlue("blue",longitud,velocidad,propulsion);
+        System.out.println(blue);
+        blue.tocarGuitarra();
+        blue.nadar();
         
+        System.out.println("Datos para el segundo orni azul!");
+        System.out.print("Ingrese la longitud de la cola: ");
+        longitud = scan.nextDouble();
+        System.out.print("Ingrese la velocidad: ");
+        velocidad=scan.nextDouble();
+        System.out.print("Ingrese la propulsion: ");
+        propulsion=scan.nextDouble();
+        scan.nextLine();
+        
+        OrnitorrincoBlue blui=new OrnitorrincoBlue("blui",longitud, velocidad, propulsion);
+        System.out.println(blui);
+        blui.tocarGuitarra();
+        blui.nadar();
+    
+        scan.close();
+        
+        Castor [] ornitohermanos = new Castor [3];
+        ornitohermanos [0] = blui;
+        ornitohermanos [1] = cristian;
+        ornitohermanos [2] = blue;
+        
+        } catch (ArrayIndexOutOfBoundsException exception){
+            System.out.println("El indice esta fuera del rango!");
+        } finally {
+            System.out.println("Los ornitohermanos juntos al fin !!!");
+        }
         
     }
 }
