@@ -25,7 +25,5 @@ public class OrnitorrincoBlue extends Castor{
         System.out.println(nombre + "toca la guitarra");
         super.tocarGuitarra();
     }
-
-    
     
 }
