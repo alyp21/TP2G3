@@ -32,7 +32,7 @@ public class Main {
 //        
 //        azul2.nadar();
 //        azul2.tocarGuitarra();
-        scan.close();
+          scan.close();
         
         
     }
