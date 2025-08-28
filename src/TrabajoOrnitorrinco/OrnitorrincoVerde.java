@@ -30,4 +30,11 @@ public class OrnitorrincoVerde extends Castor implements MamaPata {
    public void tocarGuitarra(){
    super.tocarGuitarra();
    }
+
+    @Override
+    public String toString() {
+        return "OrnitorrincoVerde{" + "PICO=" + PICO + ", PATAS=" + PATAS + ", nombre=" + nombre + '}';
+    }
+   
+   
  }
