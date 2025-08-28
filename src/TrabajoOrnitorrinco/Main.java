@@ -17,6 +17,7 @@ public class Main {
         cristian.tocarGuitarra();
         cristian.tocarGuitorgan();
         cristian.tocarOrgano();
+
 //        OrnitorrincoBlue  azul=new OrnitorrincoBlue("azul",4,3,5);
 //        OrnitorrincoBlue  azul2=new OrnitorrincoBlue("azul2",4,3,5);
 //        System.out.println("Ingrese la longitud de la cola:");
@@ -31,6 +32,7 @@ public class Main {
 //        
 //        azul2.nadar();
 //        azul2.tocarGuitarra();
+        scan.close();
         
         
     }
