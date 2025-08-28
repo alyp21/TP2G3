@@ -8,8 +8,8 @@ public class OrnitorrincoVerde extends Castor implements MamaPata {
     private final double PATAS = 7.5;
     private String nombre;
 
-    public OrnitorrincoVerde(String nombre, double velocidad, double cola) {
-        super(velocidad, cola);
+    public OrnitorrincoVerde(String nombre, double cola, double velocidad) {
+        super(cola, velocidad);
         this.nombre = nombre;
     }
 
