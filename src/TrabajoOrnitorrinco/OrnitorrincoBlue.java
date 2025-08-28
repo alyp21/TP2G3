@@ -18,11 +18,11 @@ public class OrnitorrincoBlue extends Castor{
     @Override
     public void nadar() {
         double velocidadFinal = velocidad + propulsion; 
-        System.out.println(nombre + "Nada con velocidad " + velocidadFinal+ "km/h");
+        System.out.println(nombre + " nada con velocidad " + velocidadFinal+ "km/h");
     }
     @Override
     public void tocarGuitarra(){
-        System.out.println(nombre + "Toca la guitarra");
+        System.out.println(nombre + " toca la guitarra");
         super.tocarGuitarra();
 
     } 

@@ -15,7 +15,7 @@ public class Castor {
     public void tocarGuitarra(){
         Random numRandom=new Random();
         int numero=numRandom.nextInt(6)+1;
-        System.out.println("Toca cuerda"+numero);
+        System.out.println("Toca cuerda "+numero);
     }
     
     public void nadar(){
