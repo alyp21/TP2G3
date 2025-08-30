@@ -1,6 +1,12 @@
 
 package TrabajoOrnitorrinco;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -63,7 +69,38 @@ public class Main {
         } finally {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
-        
+         List<Castor> nadadores = new ArrayList<>();
+        nadadores.add(blue);
+        nadadores.add(blui);
+        nadadores.add(otro);
+
+        // Lista para los mejores nadadores (solo OrniAzul)
+        List<OrnitorrincoBlue> mejoresNadadores = new ArrayList<>();
+
+        for (Castor c : nadadores) {
+            if (c instanceof OrnitorrincoBlue) {
+                mejoresNadadores.add((OrnitorrincoBlue) c);
+            }
+        }
+         Collections.sort(mejoresNadadores, new Comparator<OrnitorrincoBlue>() {
+            @Override
+            public int compare(OrnitorrincoBlue o1, OrnitorrincoBlue o2) {
+                return Double.compare(o1.getPropulsion(), o2.getPropulsion());
+            }
+        });
+
+        // Mostrar con Iterator
+        Iterator<OrnitorrincoBlue> it = mejoresNadadores.iterator();
+        System.out.println("Mejores nadadores (ordenados por propulsión):");
+        while (it.hasNext()) {
+            OrnitorrincoBlue o = it.next();
+            System.out.println("Propulsión: " + o.getPropulsion());
+            o.nadar();
+        }
+    }
+      
 //>>>>>> 8fd3e949f99b3c46fb3e858c222bce6d2da0a4a6
     }
+}       
 }
+
