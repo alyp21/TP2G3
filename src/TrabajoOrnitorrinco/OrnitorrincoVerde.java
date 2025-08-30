@@ -11,6 +11,7 @@ public class OrnitorrincoVerde extends Castor implements MamaPata {
     public OrnitorrincoVerde(String nombre, double cola, double velocidad) {
         super(cola, velocidad);
         this.nombre = nombre;
+        
     }
 
    @Override

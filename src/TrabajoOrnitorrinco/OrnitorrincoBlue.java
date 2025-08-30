@@ -27,5 +27,10 @@ public class OrnitorrincoBlue extends Castor{
 
     } 
 
+    @Override
+    public String toString() {
+        return "OrnitorrincoBlue{" + "nombre=" + nombre + ", propulsion=" + propulsion + '}';
+    }
+
     }
     
