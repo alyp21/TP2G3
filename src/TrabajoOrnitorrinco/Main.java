@@ -34,9 +34,9 @@ public class Main {
         blue.tocarGuitarra();
         blue.nadar();
         
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //        scan.close ();      
-=======
+//=======
         System.out.println("Datos para el segundo orni azul!");
         System.out.print("Ingrese la longitud de la cola: ");
         longitud = scan.nextDouble();
@@ -64,6 +64,6 @@ public class Main {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
         
->>>>>>> 8fd3e949f99b3c46fb3e858c222bce6d2da0a4a6
+//>>>>>> 8fd3e949f99b3c46fb3e858c222bce6d2da0a4a6
     }
 }
