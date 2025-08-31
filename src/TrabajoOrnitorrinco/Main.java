@@ -3,6 +3,7 @@ package TrabajoOrnitorrinco;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -64,19 +65,19 @@ public class Main {
         } finally {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
-        List<OrniAzul> nadadores = new ArrayList<>();
-        for (Castor c : hermanos) {
-            if (c instanceof OrniAzul) {
-                nadadores.add((OrniAzul) c);
+        List<OrnitorrincoBlue> nadadores = new ArrayList<>();
+        for (Castor c : nadadores) {
+            if (c instanceof OrnitorrincoBlue) {
+                nadadores.add((OrnitorrincoBlue) c);
             }
         }
 
-        nadadores.sort(Comparator.comparingDouble(OrniAzul::getPropulsion));
+        nadadores.sort(Comparator.comparingDouble(OrnitorrincoBlue::getPropulsion));
 
-        Iterator<OrniAzul> it = nadadores.iterator();
+        Iterator<OrnitorrincoBlue> it = nadadores.iterator();
         System.out.println(" Nadadores ordenados por propulsión:");
         while (it.hasNext()) {
-            OrniAzul o = it.next();
+            OrnitorrincoBlue o = it.next();
             System.out.println("Propulsión: " + o.getPropulsion() + " km/s");
     }
 }
