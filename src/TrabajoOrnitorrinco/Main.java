@@ -2,14 +2,13 @@
 package TrabajoOrnitorrinco;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        try {
+        
               Scanner scan=new Scanner(System.in);
               System.out.println("Datos necesarios para el orni verde!");
               System.out.print("Ingrese la longitud de la cola: ");
@@ -56,6 +55,7 @@ public class Main {
                 scan.close();
             
               Castor [] ornitohermanos = new Castor [3];
+           try {
               ornitohermanos [0] = blui;
               ornitohermanos [1] = cristian;
               ornitohermanos [2] = blue;
@@ -66,9 +66,9 @@ public class Main {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
             List<OrnitorrincoBlue> nadadores = new ArrayList<>();
-            for (int i = 0; i < hermanos.length; i++) {
-            if (hermanos[i] instanceof OrnitorrincoBlue) {
-            OrnitorrincoBlue nadador = (OrnitorrincoBlue) hermanos[i];
+            for (int i = 0; i < ornitohermanos.length; i++) {
+            if (ornitohermanos[i] instanceof OrnitorrincoBlue) {
+            OrnitorrincoBlue nadador = (OrnitorrincoBlue) ornitohermanos[i];
             nadadores.add(nadador); 
       }
     }
