@@ -66,9 +66,9 @@ public class Main {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
             List<OrnitorrincoBlue> nadadores = new ArrayList<>();
+            Object[] hermanos = null;
             for (int i = 0; i < hermanos.length; i++) {
-            if (hermanos[i] instanceof OrnitorrincoBlue) {
-            OrnitorrincoBlue nadador = (OrnitorrincoBlue) hermanos[i];
+            if (hermanos[i] instanceof OrnitorrincoBlue nadador) {
             nadadores.add(nadador); 
       }
     }
