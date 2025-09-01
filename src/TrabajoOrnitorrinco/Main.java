@@ -23,7 +23,7 @@ public class Main {
               cristian.tocarGuitarra();
               cristian.tocarGuitorgan();
               cristian.tocarOrgano();
-              
+               
               System.out.println("");
               System.out.println("Datos para el primer orni azul!");
               System.out.print("Ingrese la longitud de la cola:");
