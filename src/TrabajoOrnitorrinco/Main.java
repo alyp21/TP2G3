@@ -36,7 +36,7 @@ public class Main {
               System.out.println(blue);
               blue.tocarGuitarra();
               blue.nadar();
-              scan.close ();      
+//              scan.close ();      
 
               System.out.println("Datos para el segundo orni azul!");
               System.out.print("Ingrese la longitud de la cola: ");
@@ -52,7 +52,7 @@ public class Main {
               blui.tocarGuitarra();
               blui.nadar();
             
-                scan.close();
+            scan.close();
             
               Castor [] ornitohermanos = new Castor [3];
            try {
@@ -65,7 +65,7 @@ public class Main {
         }   finally {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
-            List<OrnitorrincoBlue> nadadores = new ArrayList<>();
+          List<OrnitorrincoBlue> nadadores = new ArrayList<>();
             for (int i = 0; i < ornitohermanos.length; i++) {
             if (ornitohermanos[i] instanceof OrnitorrincoBlue) {
             OrnitorrincoBlue nadador = (OrnitorrincoBlue) ornitohermanos[i];
