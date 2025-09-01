@@ -16,20 +16,23 @@ public class OrnitorrincoVerde extends Castor implements MamaPata {
 
    @Override
    public void tocarOrgano (){
-   Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
+       System.out.println(nombre + "toca el organo");
        System.out.println("Do-Re-Mi (Presiona una tecla para continuar)");
        scanner.nextLine();
        System.out.println("Fa-Sol-La-Si");
 }
    public void tocarGuitorgan(){
-   super.tocarGuitarra();
-   tocarOrgano();
+       System.out.println( nombre + "toca el guitorgan");
+       super.tocarGuitarra();
+       tocarOrgano();
        System.out.println(" cuac...cuaac...!");
  
    }
    @Override 
-   public void tocarGuitarra(){
-   super.tocarGuitarra();
+       public void tocarGuitarra(){
+       System.out.println(nombre + "toca la guitarra");
+       super.tocarGuitarra();
    }
 
     @Override

@@ -19,10 +19,12 @@ public class Main {
               
               OrnitorrincoVerde cristian=new OrnitorrincoVerde("cristian",longitud,velocidad);
               System.out.println(cristian);
+              System.out.println("habilidades de orni verde:");
               cristian.tocarGuitarra();
               cristian.tocarGuitorgan();
               cristian.tocarOrgano();
               
+              System.out.println("");
               System.out.println("Datos para el primer orni azul!");
               System.out.print("Ingrese la longitud de la cola:");
               longitud =scan.nextDouble();
@@ -34,10 +36,11 @@ public class Main {
               
               OrnitorrincoBlue blue = new OrnitorrincoBlue("blue",longitud,velocidad,propulsion);
               System.out.println(blue);
+              System.out.println("habilidades de blue:");
               blue.tocarGuitarra();
-              blue.nadar();
-//              scan.close ();      
+              blue.nadar();  
 
+              System.out.println("");
               System.out.println("Datos para el segundo orni azul!");
               System.out.print("Ingrese la longitud de la cola: ");
               longitud = scan.nextDouble();
@@ -49,6 +52,8 @@ public class Main {
             
               OrnitorrincoBlue blui=new OrnitorrincoBlue("blui",longitud, velocidad, propulsion);
               System.out.println(blui);
+              System.out.println("habilidades de blui:");
+              System.out.println("");
               blui.tocarGuitarra();
               blui.nadar();
             
@@ -63,6 +68,7 @@ public class Main {
          } catch (ArrayIndexOutOfBoundsException exception){
             System.out.println("El indice esta fuera del rango!");
         }   finally {
+            System.out.println("");
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
           List<OrnitorrincoBlue> nadadores = new ArrayList<>();
@@ -83,10 +89,11 @@ public class Main {
     }
 }
             Iterator<OrnitorrincoBlue> it = nadadores.iterator();
+            System.out.println("");
             System.out.println("Nadadores ordenados por propulsión:");
             while (it.hasNext()) {
             OrnitorrincoBlue o = it.next();
-            System.out.println("Propulsión: " + o.getPropulsion() + " km/s");
+            System.out.println("propusion: " + o.getPropulsion() + " km/s");
         }
     }
 }
