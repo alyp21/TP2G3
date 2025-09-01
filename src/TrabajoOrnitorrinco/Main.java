@@ -72,12 +72,11 @@ public class Main {
             System.out.println("Los ornitohermanos juntos al fin !!!");
         }
           List<OrnitorrincoBlue> nadadores = new ArrayList<>();
-            for (int i = 0; i < ornitohermanos.length; i++) {
-            if (ornitohermanos[i] instanceof OrnitorrincoBlue) {
-            OrnitorrincoBlue nadador = (OrnitorrincoBlue) ornitohermanos[i];
-            nadadores.add(nadador); 
-      }
-    }
+        for (Castor ornitohermano : ornitohermanos) {
+            if (ornitohermano instanceof OrnitorrincoBlue nadador) {
+                nadadores.add(nadador);
+            }
+        }
             for (int i = 0; i < nadadores.size() - 1; i++) {
             for (int j = i + 1; j < nadadores.size(); j++) {
             if (nadadores.get(i).getPropulsion() > nadadores.get(j).getPropulsion()) {
