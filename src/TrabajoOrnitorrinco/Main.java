@@ -89,7 +89,7 @@ public class Main {
 }
             Iterator<OrnitorrincoBlue> it = nadadores.iterator();
             System.out.println("");
-            System.out.println("Nadadores ordenados por propulsión:");
+            System.out.println("Nadadores ordenados por propulsion:");
             while (it.hasNext()) {
             OrnitorrincoBlue o = it.next();
             System.out.println("propusion: " + o.getPropulsion() + " km/s");
